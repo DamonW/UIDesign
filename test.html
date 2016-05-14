@@ -41,7 +41,7 @@
 					<a href="#" aria-expanded="false">Entities<span class="fa arrow"></span></a>
 					<ul aria-expanded="false" class="collapse">
 						<li>
-							<a href="#" aria-expanded="false">compete with<span class="fa plus-times"></span></a>
+							<a href="#" aria-expanded="false">compete with</a>
 							<ul aria-expanded="false" class="collapse">
 								<li><a href="#">Dell</a></li>
 								<li><a href="#">IBM</a></li>
@@ -56,11 +56,15 @@
 					<a href="#" aria-expanded="false">Contacts<span class="fa arrow"></span></a>
 					<ul aria-expanded="false" class="collapse">
 						<li>
-							<a href="#" aria-expanded="false">buyside analyst<span class="fa plus-times"></span></a>
+							<a href="#" aria-expanded="false">buyside analyst</a>
 							<ul aria-expanded="false" class="collapse">
-								<li><a href="#">Damon</a></li>
-								<li><a href="#">Derek</a></li>
-								<li><a href="#">Matt</a></li>
+								<li>
+									<a href="#">Damon
+										<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i>
+									</a>
+								</li>
+								<li><a href="#">Derek<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i></a></li>
+								<li><a href="#">Matt<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i></a></li>
 								<li><a href="#">Mary</a></li>
 							</ul>
 						</li>
@@ -82,8 +86,14 @@
 
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-lg-12">
-					<h1>Simple Sidebar</h1>
+				<div class="col-lg-4">
+					<h1>Note List</h1>
+					<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+					<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+					<!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
+				</div>
+				<div class="col-lg-8">
+					<h1>Note Detail</h1>
 					<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
 					<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
 					<!-- <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a> -->
@@ -107,6 +117,12 @@
 
 <script type="text/javascript">
 	$("#menu").metisMenu();
+
+	// $('a').click(function (e) {
+	// 	console.log($(this));
+	// 	$(this).children(':first').css("display", "block");
+	// 	console.log($(this).children(':first')); 
+	// })
 </script>
 
 
