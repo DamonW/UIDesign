@@ -29,6 +29,7 @@
 	<!-- <link href="vendor/bootstrap.metismenu/css/jquery.metisMenu.css" rel="stylesheet"> -->
 	<!-- <link href="vendor/bootstrap.metismenu/css/metisMenu.min.css" rel="stylesheet"> -->
 	<link href="vendor/my.css" rel="stylesheet">
+	<link href="tng.css" rel="stylesheet">
 
 	<!-- <script src="vendor/bootstrap.metismenu/js/jquery.metisMenu.min.js"></script> -->
 	<title>Uidesign</title>
@@ -37,12 +38,12 @@
 <body>
 <!-- <nav class="navbar navbar-static-top" role="navigation" style="background-color:black; margin-bottom:0px">
 </nav> -->
-<div id="wrapper" class="container-fluid" style="background-color: #EEE;padding-right: 0px">
+<div id="wrapper" class="container-fluid" style="background-color: #F2F2F2;padding-right: 0px">
 
 	<!-- Sidebar -->
-	<div id="sidebar-wrapper" style="background-color: #2A2731">
+	<div id="sidebar-wrapper" style="background-color: #252935">
 		<nav class="sidebar-nav">
-			<div style="color: white">
+			<div style="color: white;">
 				<h3>Advent Software Inc.</h3>
 			</div>
 			<ul class="metismenu" id="menu">
@@ -85,14 +86,13 @@
 	</div>
 	<!-- /#sidebar-wrapper -->
 
-	<nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px;background-color: white;font-size: 12px;border: none;height: 21px">
-		<div class="navbar-header">
-			<a href="#menu-toggle" id="menu-toggle" class="navbar-brand">
-				<i class="fa fa-bars" aria-hidden="true"></i>
-			</a>
-		</div>
+	<nav class="navbar navbar-static-top" role="navigation" style="background-color: white;margin-bottom: 0px;color: black;border-bottom: 1px solid rgba(0, 0, 0, 0.3)">
+		<a href="#menu-toggle" id="menu-toggle" class="navbar-brand" style="height: 30px">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</a>
+
 		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-left" style="color: black">
+			<ul class="nav navbar-nav navbar-left">
 				<li class="dropdown active-nav" ui-sref-active="active-nav"><a href="#">RESEARCH</a></li>
 				<li><a href="#">DETAIL</a></li>
 				<li><a href="#">ACTITY</a></li>
@@ -111,180 +111,263 @@
 			</ul>
 		</div>
 	</nav>
-	<div id="page-content-wrapper">
-
-
+	<div id="page-content-wrapper" style="background-color: #F2F2F2">
 		<!-- Page Content -->
 		<div class="row">
-			<div class="col-sm-4" style="padding-left: 1px;padding-right: 2px">
+			<div class="col-sm-4 col-xs-12" style="padding: 15px">
 				<div class="panel panel-default" style="border-radius: 0px">
 					<div class="panel-heading" style="background-color:white;height: 50px">
 						<!-- <button class="pull-left btn btn-sm btn-primary btn-outline"> <i class="fa fa-filter"></i>Filtering  Off </button> -->
 						<!-- <input type="text" class="form-control" placeholder="Enter keyword"> -->
 						<button class="pull-left btn btn-sm btn-primary btn-outline"> <i class="fa fa-filter"></i> Filtering  Off </button>
 					</div>
-					<div class="panel-body" style="padding: 0px 0px 0px 0px;border-radius: 0px">
-						<ul class="list-group elements-list" style="" >
-							<li class="list-group-item" ondblclick="openThread()" style="border-left: 5px solid #ed5565;border-right: 0px;border-bottom: 1px" >
-								<div> 
-									<div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding-bottom: 3px"> 
-										<strong title="ibm" class="ng-binding">Fune A Dul deliience report</strong>
-									</div> 
-									<div style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis; color:gray"> 
-										<small title="IBM">IBM, ADVS, MSFT, SSNC</small> 
-									</div> 
-									<div> 
-										<small class="text-muted"><em class="ng-binding">METTest1</em></small> 
-									</div> 
-									<div> 
-										<div class="small text-muted" style="float:right"> 
-											<div class="form-inline small text-muted priority-star-container ng-isolate-scope" note-item="currentItem"> 
-											</div>
-										</div> 
-										<small class="text-muted ">Administrator on 05.13.2016</small> 
-									</div> 
-								</div>
-							</li>
-							<li class="list-group-item" style="padding:10px; border-left: 5px solid #ed5565">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-							<li class="list-group-item" style="padding:10px">
-								<a data-toggle="tab" href="#tab-1">
-									<div>
-										<strong>AAPL, MSFT, GOOG, SSNC</strong>
-									</div>
-									<div>
-										<small class="pull-right text-muted">Vinh Hong</small>
-										<small class="text-muted"><em>TamaleNote</em></small>
-									</div>
-									<div>
-										<small class="pull-right text-muted"> 09.28.2015</small>
-										<small class="text-muted">AAPL Recommendation</small>
-									</div>
-								</a>
-							</li>
-						</ul>
+
+					<div class="slimScrollDiv">
+						<div class="full-height-scroll" style="padding: 0px 0px 0px 0px;border-radius: 0px">
+							<ul class="list-group elements-list" style="" >
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px;>
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text"> 09.28.2015</small>
+
+
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 7 </i></small>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px;>
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text"> 09.28.2015</small>
+
+
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 7 </i></small>
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #1ab394" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>SSNC Recommendation</strong>
+											<small class="pull-right text"> 09.28.2015</small>
+
+										</div>
+										<div>
+											<small class="pull-right text">Derek Miller</small>
+											<small class="text">SSNC, ADVS</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+
+											<small class="pull-right text"><i class="fa fa-comment"> 2 | </i>  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></small>
+
+										</div>
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #1ab394" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>Fund on board status Update</strong>
+											<small class="pull-right text"> 09.28.2015</small>
+										</div>
+										<div>
+											<small class="pull-right text">Derek Miller</small>
+											<small class="text">Fund A, Portfolio Manager A</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i>
+											</small>
+
+
+										</div>
+									</a>
+								</li>
+
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+									<a data-toggle="tab" href="#tab-1">
+										<div>
+											<strong>AAPL Recommendation</strong>
+											<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+										</div>
+										<div>
+											<small class="pull-right text">Vinh Hong</small>
+											<small class="text">AAPL, MSFT, GOOG, ...</small>
+										</div>
+										<div>
+											<small class="text">TamaleNote</small>
+											<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+												<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+											</small>
+
+
+
+										</div>
+
+
+									</a>
+								</li>
+
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-8" style="padding-left: 2px;padding-right: 2px">
+			<div class="col-sm-8 hidden-xs" style="padding: 3px 3px 3px 3px">
 				<div class="panel panel-default" style="border-radius: 0px">
 
 					<div class="panel-body">
