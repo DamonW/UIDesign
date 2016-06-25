@@ -122,18 +122,18 @@
 						<button class="pull-left btn btn-sm btn-primary btn-outline"> <i class="fa fa-filter"></i> Filtering  Off </button>
 					</div>
 					<div class="panel-heading" style="background-color:white; padding-right:5px; padding-bottom:17px; padding-left:5px; height:15px; padding-top:0px">
-                            <small>1354 items</small>
-                            <select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:75px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
-                                <option>Newest</option>
-                                <option>Oldest</option>
-                            </select>
-                            <select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:125px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
-                                <option>Last Modified Date</option>
-                                <option>Display Date</option>
-                                <option>Submitted Date</option>
-                                <option>Clip</option>
-                            </select>
-                        </div>
+						<small>1354 items</small>
+						<select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:75px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
+							<option>Newest</option>
+							<option>Oldest</option>
+						</select>
+						<select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:125px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
+							<option>Last Modified Date</option>
+							<option>Display Date</option>
+							<option>Submitted Date</option>
+							<option>Clip</option>
+						</select>
+					</div>
 
 					<div class="slimScrollDiv">
 						<div class="full-height-scroll" style="padding: 0px 0px 0px 0px;border-radius: 0px">
@@ -475,7 +475,8 @@
 	function openThread(){
 		console.log(123);
 		if(window.innerWidth < 768) {
-		$("#note-list").css('display', 'none');
+			$("#note-list").css('display', 'none');
+			$("#note-detail").removeClass('hidden-xs');
 		}
 		
 	}
