@@ -111,21 +111,34 @@
 			</ul>
 		</div>
 	</nav>
-	<div id="page-content-wrapper" style="background-color: #F2F2F2">
+	<div id="page-content-wrapper" style="background-color: #F2F2F2;padding:5px">
 		<!-- Page Content -->
 		<div class="row">
-			<div class="col-sm-4 col-xs-12" style="padding: 15px">
+			<div class="col-sm-4" id="note-list" style="">
 				<div class="panel panel-default" style="border-radius: 0px">
 					<div class="panel-heading" style="background-color:white;height: 50px">
 						<!-- <button class="pull-left btn btn-sm btn-primary btn-outline"> <i class="fa fa-filter"></i>Filtering  Off </button> -->
 						<!-- <input type="text" class="form-control" placeholder="Enter keyword"> -->
 						<button class="pull-left btn btn-sm btn-primary btn-outline"> <i class="fa fa-filter"></i> Filtering  Off </button>
 					</div>
+					<div class="panel-heading" style="background-color:white; padding-right:5px; padding-bottom:17px; padding-left:5px; height:15px; padding-top:0px">
+                            <small>1354 items</small>
+                            <select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:75px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
+                                <option>Newest</option>
+                                <option>Oldest</option>
+                            </select>
+                            <select id="sortingDirection" title="Sort By" name="sortingDirection" type="select" class="pull-right form-control required" style="width:125px; height:17px; font-size: 11px; border:none; text-align:right" aria-required="true">
+                                <option>Last Modified Date</option>
+                                <option>Display Date</option>
+                                <option>Submitted Date</option>
+                                <option>Clip</option>
+                            </select>
+                        </div>
 
 					<div class="slimScrollDiv">
 						<div class="full-height-scroll" style="padding: 0px 0px 0px 0px;border-radius: 0px">
 							<ul class="list-group elements-list" style="" >
-								<li class="list-group-item" ondblclick="openThread()" style="padding:10px;>
+								<li class="list-group-item" onclick="openThread()" style="padding:10px;>
 									<a data-toggle="tab" href="#tab-1">
 										<div>
 											<strong>AAPL Recommendation</strong>
@@ -183,7 +196,7 @@
 								<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #1ab394" >
 									<a data-toggle="tab" href="#tab-1">
 										<div>
-											<strong>Fund on board status Update</strong>
+											<strong >Fund on board status Update</strong>
 											<small class="pull-right text"> 09.28.2015</small>
 										</div>
 										<div>
@@ -367,7 +380,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-sm-8 hidden-xs" style="padding: 3px 3px 3px 3px">
+			<div class="col-sm-8 hidden-xs" id="note-detail" style="">
 				<div class="panel panel-default" style="border-radius: 0px">
 
 					<div class="panel-body">
@@ -458,6 +471,14 @@
 
 <script type="text/javascript">
 	$("#menu").metisMenu();
+
+	function openThread(){
+		console.log(123);
+		if(window.innerWidth < 768) {
+		$("#note-list").css('display', 'none');
+		}
+		
+	}
 
 	// $('a').click(function (e) {
 	// 	console.log($(this));
