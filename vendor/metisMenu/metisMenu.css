@@ -1,5 +1,5 @@
 .metismenu .arrow {
-  float: right;
+  float: left;
   line-height: 1.42857;
 }
 *[dir="rtl"] .metismenu .arrow {
