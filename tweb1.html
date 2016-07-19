@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	.navbar-nav > li > a, .navbar-brand {
+		padding-top:5px !important; padding-bottom:0 !important;
+		height: 30px;
+	}
+	.navbar {min-height:30px !important;}
+
+	.btn.btn-success.btn-outline {
+		border-radius: 2.5px;
+		background-color: #307fe2;
+		color: #ffffff;
+	}
+
+</style>
+
+<head>
+	<meta charset='utf-8'>
+<!--     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="description" content="Uidesign : "> -->
+	<meta name="viewport" content="width=device-width, 
+	initial-scale=1.0, 
+	maximum-scale=1.0, 
+	user-scalable=no,minimal-ui">
+
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+
+	<script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+	<script src="vendor/jsTree/jstree.min.js"></script>
+
+	<link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
+	<link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+	<link href="vendor/jsTree/style.min.css" rel="stylesheet" >
+	<link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+	<!-- <link href="vendor/bootstrap.metismenu/css/jquery.metisMenu.css" rel="stylesheet"> -->
+	<!-- <link href="vendor/bootstrap.metismenu/css/metisMenu.min.css" rel="stylesheet"> -->
+	<link href="vendor/my.css" rel="stylesheet">
+	<link href="tng.css" rel="stylesheet">
+
+	<!-- <script src="vendor/bootstrap.metismenu/js/jquery.metisMenu.min.js"></script> -->
+	<title>Uidesign</title>
+</head>
+
+<body>
+<!-- <nav class="navbar navbar-static-top" role="navigation" style="background-color:black; margin-bottom:0px">
+</nav> -->
+
+
+<div id="wrapper" class="container-fluid" style="background-color: #F2F2F2;padding-right: 0px">
+
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper" style="background-color: #395a80">
+
+
+	<div class="navbar-collapse collapse">
+
+		<nav class="sidebar-nav">
+			<ul class="metismenu" id="menu">
+				<li class="active">
+					<a href="#" aria-expanded="false">Research<span class="fa arrow"></span></a>
+					<ul aria-expanded="false" class="collapse in">
+						<li>
+							<a href="#" aria-expanded="false">compete with</a>
+							<ul aria-expanded="false" class="collapse">
+								<li><a href="#">Dell</a></li>
+								<li><a href="#">IBM</a></li>
+								<li><a href="#">SSNC</a></li>
+								<li><a href="#">ADVS</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+				<li>
+					<a href="#" aria-expanded="false">Contacts<span class="fa arrow"></span></a>
+					<ul aria-expanded="false" class="collapse">
+						<li>
+							<a href="#" aria-expanded="false">buyside analyst</a>
+							<ul aria-expanded="false" class="collapse">
+								<li>
+									<a href="#">Damon
+										<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i>
+									</a>
+								</li>
+								<li><a href="#">Derek<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i></a></li>
+								<li><a href="#">Matt<i class="pull-right fa fa-ellipsis-h" style="display: block;"></i></a></li>
+								<li><a href="#">Mary</a></li>
+							</ul>
+						</li>
+
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		</div>
+	</div>
+	<nav class="navbar navbar-static-top" style="margin-bottom:0px;background-color:#2a3d53;color:#f2f2f2">
+		<div class="navbar-header navbar-minimalize minimalize-styl-2" style="margin-left:0px;margin-top:10px;font-size:large;">
+			<a id="menu-toggle">
+				<i class="fa fa-bars" style="color:#f2f2f2;" aria-hidden="true"></i>
+			</a>
+
+		</div>
+
+		<div class="collapse navbar-collapse">
+
+			<div class="navbar-text navbar-right" style="padding-right:30px;margin-bottom: 15px;">
+				Derek Miller <span class="caret"></span>
+			</div>
+
+			<div class="navbar-right" style="padding-right:10px;padding-left:10px;">
+				<img src="https://media.licdn.com/media/p/2/000/0e5/273/2006d4e.jpg" class="img-circle navbar-right" style="height:40px;margin-top:5px;margin-bottom: 5px;">
+			</div>
+
+			<form class="navbar-form navbar-right" role="search" style="
+			margin-top: 5px;
+			margin-bottom: 5px;padding-right:0px">
+			<div class="form-group">
+				<button class="btn btn-sm" style="border:none;background-color:transparent;font-size:large">
+					<i class="fa fa-search" aria-hidden="true"></i>
+				</button>
+				<button class="btn btn-xs" style="border:none;background-color:transparent;font-size:large">
+					<i class="fa fa-bank" aria-hidden="true"></i>
+				</button>
+				<button class="btn btn-sm" style="border:none;background-color:transparent;font-size:large">
+					<i class="fa fa-user" aria-hidden="true"></i>
+				</button>
+				<button class="btn btn-sm" style="border:none;background-color:transparent;font-size:large">
+					<i class="fa fa-pencil" aria-hidden="true"></i>
+				</button>
+			</div>
+		</form>
+	</div>
+</nav>
+<div class="row wrapper border-bottom page-heading" style="background-color:#395a80;color:#f2f2f2;padding-bottom: 0px;border-bottom-width: 0px;">
+	<div class="col-sm-10" >
+		<ol class="breadcrumb" style="background-color:transparent;
+		padding-top: 7px;
+		padding-bottom: 7px;
+		">
+		<li>
+			<a href="index.html">Research</a>
+		</li>
+		<li>
+			<a>Team A Recommendations</a>
+		</li>
+	</ol>
+
+	</div>
+
+	<div class="col-sm-2">
+	<button class="btn pull-right" style="background-color:transparent;">
+		<i class="fa fa-gears"></i>
+	</button>
+
+</div>
+
+
+</div>
+
+<!-- 	<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0px;background-color:white;height:50px">
+		<div class="navbar-header" style="width:25%;">
+			<a href="#menu-toggle" id="menu-toggle" class="navbar-minimalize minimalize-styl-2" style="margin-left:0px">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</a>
+			<!-- <button data-toggle="dropdown" id="rel-toggle" class="navbar-minimalize minimalize-styl-2 btn dropdown-toggle" style="background-color:white;margin-left:0px;padding-left:0px" aria-expanded="false">Mill Valey Investments <span class="caret"></span></button> -->
+			<!-- </div> -->
+
+			<!-- </nav> -->
+
+
+
+
+			<div id="page-content-wrapper" style="background-color: #F2F2F2;padding:5px">
+				<!-- Page Content -->
+
+				<div class="row">
+					<div class="panel panel-default" style="padding-top:10px;padding-bottom:10px;padding-left:15px;margin-bottom:5px;padding-right:15px;background-color: white;border:none">
+
+						<button data-toggle="dropdown" id="rel-toggle" class="btn dropdown-toggle" style="background-color:transparent;margin-left:0px;padding-left:0px" aria-expanded="false">Mill Valey Investments <span class="caret"></span></button>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<div class="btn-group">
+							<button type="button" class="btn btn-sm btn-success btn-outline"><i class="fa fa-filter"> Recommenation</i>
+							</button>
+							<button type="button" class="btn btn-sm btn-success dropdown-toggle btn-outline" data-toggle="dropdown" data-submenu="" aria-expanded="false""> <span class="caret"></span> 
+							</button> 
+							<ul class="dropdown-menu">
+							</ul>
+						</div>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<button data-toggle="dropdown" id="rel-toggle" class="btn btn-success btn-outline btn-sm" style=";margin-left:0px;padding-left:5px;border-radius:2px" aria-expanded="false"><i class="fa fa-filter" aria-hidden="true"></i> Group By <span class="caret"></span></button>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+						<button data-toggle="dropdown" id="rel-toggle" class="btn btn-outline btn-success btn-sm" style="margin-left:0px;padding-left:5px;border-radius:2px" aria-expanded="false"><i class="fa fa-filter" aria-hidden="true"></i> Sort By <span class="caret"></span></button>
+						&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-3 hidden" id="rel-tree" style="padding-right:0px;border: 1px solid #ddd">
+						<div id="using_json" style="background-color:white;height:800px"></div>
+					</div>
+					<div class="col-sm-4" id="note-list" style="padding-right:0px;padding-left:15px">
+						<div class="panel panel-default" style="border-radius: 0px">
+
+							<div class="slimScrollDiv">
+								<div class="full-height-scroll" style="padding: 0px 0px 0px 0px;border-radius: 0px">
+									<ul class="list-group elements-list" style="" >
+										<li class="list-group-item" onclick="openThread()" style="padding:10px;">
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text"> 09.28.2015</small>
+
+
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 7 </i></small>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px;>
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text"> 09.28.2015</small>
+
+
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 7 </i></small>
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #1ab394" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>SSNC Recommendation</strong>
+													<small class="pull-right text"> 09.28.2015</small>
+
+												</div>
+												<div>
+													<small class="pull-right text">Derek Miller</small>
+													<small class="text">SSNC, ADVS</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+
+													<small class="pull-right text"><i class="fa fa-comment"> 2 | </i>  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i></small>
+
+												</div>
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #1ab394" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong >Fund on board status Update</strong>
+													<small class="pull-right text"> 09.28.2015</small>
+												</div>
+												<div>
+													<small class="pull-right text">Derek Miller</small>
+													<small class="text">Fund A, Portfolio Manager A</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i>
+													</small>
+
+
+												</div>
+											</a>
+										</li>
+
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+										<li class="list-group-item" ondblclick="openThread()" style="padding:10px; border-left: 5px solid #ed5565" >
+											<a data-toggle="tab" href="#tab-1">
+												<div>
+													<strong>AAPL Recommendation</strong>
+													<small class="pull-right text" style="padding-left:5px"> 9.27.2015 </small>
+												</div>
+												<div>
+													<small class="pull-right text">Vinh Hong</small>
+													<small class="text">AAPL, MSFT, GOOG, ...</small>
+												</div>
+												<div>
+													<small class="text">TamaleNote</small>
+													<small class="pull-right text"><i class="fa fa-comment"> 10 | </i> <i class="fa fa-file-pdf-o"></i> |
+														<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+													</small>
+
+
+
+												</div>
+
+
+											</a>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8" id="note-detail" style="padding-left:5px;padding-right:15px">
+						<div class="panel panel-default" style="border-radius: 0px">
+
+							<div class="panel-heading" style="background-color:white;border-left:5px solid #1ab394;">
+								<h3>
+									AAPL Recommendation for Portfolio Manager on Q3 of 2015
+								</h3>
+
+								<div>
+									<strong>AAPL, MSFT, GOOG</strong>
+								</div>
+								<div class="small text-muted">
+									<i class="fa fa-clock-o"></i> Monday, 28 Sep 2015, 10:32 am
+								</div>
+								<div class="small text-muted">
+									<i class="fa fa-user"></i> Derek Miller
+								</div>
+								<div class="small text-muted">
+									<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i>
+								</div>
+
+							</div>
+							<div class="panel-body">
+
+
+								<div>
+
+									<br>
+									<table class="small m-b-xs">
+										<tbody>
+											<tr>
+												<td style="padding-right:10px"><strong>Target Price:</strong></td>
+												<td>$150</td>
+											</tr>
+											<tr>
+												<td style="padding-right:10px"><strong>Current Price:</strong></td>
+												<td>$115.05</td>
+											</tr>
+											<tr>
+												<td style="padding-right:10px"><strong>Recommendation Type:</strong></td>
+												<td>Buy</td>
+											</tr>
+											<tr>
+												<td style="padding-right:10px"><strong>Trigger Price</strong></td>
+												<td>$120.00</td>
+											</tr>
+											<tr>
+												<td style="padding-right:10px"><strong>EPS</strong></td>
+												<td>26.9</td>
+											</tr>
+											<tr>
+												<td style="padding-right:10px"><strong>Implied PE:</strong></td>
+												<td>15.1x</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<br>
+
+								<p><u>Company Description</u></p>
+								<p>
+									Apple Inc. (Apple) designs, manufactures and markets mobile communication and media devices, personal computers, and portable digital music players, and a variety of related software, services, peripherals, networking solutions, and third-party digital content and applications. The Company's products and services include iPhone, iPad, Mac, iPod, Apple TV, a portfolio of consumer and professional software applications, the iOS and OS X operating systems, iCloud, and a variety of accessory, service and support offerings. The Company also delivers digital content and applications through the iTunes Store, App StoreSM, iBookstoreSM, and Mac App Store. The Company distributes its products worldwide through its retail stores, online stores, and direct sales force, as well as through third-party cellular network carriers, wholesalers, retailers, and value-added resellers. In February 2012, the Company acquired app-search engine Chomp.
+								</p>
+								<p><u>Recommendation</u></p>
+								<p>
+									"We rate APPLE INC (AAPL) a BUY. This is based on the convergence of positive investment measures, which should help this stock outperform the majority of stocks that we rate. The company's strengths can be seen in multiple areas, such as its solid stock price performance, impressive record of earnings per share growth, compelling growth in net income, revenue growth and notable return on equity. Although no company is perfect, currently we do not see any significant weaknesses which are likely to detract from the generally positive outlook."
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /#page-content-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+
+	<!-- Menu Toggle Script -->
+	<script>
+		$("#menu-toggle").click(function(e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("toggled");
+
+
+
+		});
+
+		var expand = false
+
+		$("#rel-toggle").click(function(e) {
+			e.preventDefault();
+			if (!expand) {
+				$("#rel-tree").removeClass('hidden');
+				$("#note-list").removeClass('col-sm-4').addClass('col-sm-3');
+				$("#note-list").css('padding-left', '5px');
+				$("#note-detail").removeClass('col-sm-8').addClass('col-sm-6');
+				expand = true;
+			} else {
+				$("#rel-tree").addClass('hidden');
+				$("#note-list").removeClass('col-sm-3').addClass('col-sm-4');
+				$("#note-list").css('padding-left', '15px');
+				$("#note-detail").removeClass('col-sm-6').addClass('col-sm-8');
+				expand = false;
+			}
+
+		});
+
+
+	</script>
+
+	<script type="text/javascript">
+		$("#menu").metisMenu();
+
+
+	</script>
+
+	<script>
+		$(document).ready(function(){
+			$('#using_json').jstree({ 'core' : {
+				'checkbox' : { 'keep_selected_style' : false },
+				'themes' : [{'dots' : false},
+				{'icons' : false}],
+				'data' : [{
+					'text': 'Entities',
+					'state': {
+						'opened': true
+					},
+					'children': [{
+						'text': 'Competes With',
+						'state': {
+							'opened': true
+						},
+						'children': [{'text': 'ADVS', 'icon': 'none', 'link': '123.html'},
+						{'text': 'Backstop', 'icon': 'none'},
+						{'text': 'Code Red', 'icon': 'none'},
+						{'text': 'InvestCloud', 'icon': 'none'}]
+					},
+					{
+						'text': 'Location',
+						'state': {
+							'opened': true
+						},
+						'children': [{'text': 'Boston', 'icon': 'none'},
+						{'text': 'New York City', 'icon': 'none'},
+						{'text': 'San Francisco', 'icon': 'none'},
+						{'text': 'Beijing', 'icon': 'none'},
+						{'text': 'Hong Kong', 'icon': 'none'}]
+					}]
+				}]
+			}
+		}).bind("select_node.jstree", function (e, data) { 
+			window.location.href= "entityDetail_" + data.node.text+ '.html'});
+
+	});
+</script>
+
+</body>
+
+
+</html>
